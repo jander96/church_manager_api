@@ -16,7 +16,7 @@ import java.time.LocalDateTime
 data class Event(
     @Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Int,
+    val id: Long,
     val dateTime: LocalDateTime,
     @ManyToOne(targetEntity = Person::class, cascade = [CascadeType.REMOVE])
     val preacher: Person,

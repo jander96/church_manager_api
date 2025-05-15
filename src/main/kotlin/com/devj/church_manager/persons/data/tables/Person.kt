@@ -14,7 +14,7 @@ import jakarta.persistence.OneToMany
 data class Person(
     @Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Int,
+    val id: Long,
     val name: String,
     val role: String,
     val imageId: Int,

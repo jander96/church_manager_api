@@ -10,7 +10,7 @@ import jakarta.persistence.Id
 data class Image(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Int,
+    val id: Long,
     val url: String,
     val description: String?,
     val entityType: String,
